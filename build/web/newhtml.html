@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="index.jsp">Logout</a>
+        <br><br><br><br>
+    <center>
+        
+        <form action="UploadServlet" method="post" enctype="multipart/form-data">
+            <table width="400px" align="center" border=2>
+                <tr>
+                    <td align="center" colspan="2">File Details</td>
+                </tr>
+                <tr>
+                    <td>Department </td>
+                    <td>
+                        <input type="text" required name="dept">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Semester   </td>
+                    <td>
+                        <input type="text" required name="sem">
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Subject    </td>
+                    <td>
+                        <input type="text" required name="sub">
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Select File </td>
+                    <td>
+                        <input type="file" required name="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Upload"></td>
+                </tr>
+            </table>
+
+        </form>
+        <br><a href = "list.jsp">View List</a>
+        
+    </center>
+</body>
+</html>
